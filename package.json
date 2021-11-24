@@ -1,6 +1,6 @@
 {
   "name": "generative-art-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A bunch of utils related to generative art",
   "source": "src/index.ts",
   "main": "dist/index.js",
