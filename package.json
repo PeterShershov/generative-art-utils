@@ -1,0 +1,26 @@
+{
+  "name": "generative-art-utils",
+  "version": "0.0.1",
+  "description": "A bunch of utils related to generative art",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "canvas"
+  ],
+  "author": "Peter Shershov",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.0.1",
+    "@parcel/transformer-typescript-types": "^2.0.1",
+    "eslint": "^8.3.0",
+    "parcel": "^2.0.1",
+    "prettier": "^2.4.1",
+    "typescript": "^4.5.2"
+  }
+}
