@@ -2,4 +2,4 @@
 
 ### A bunch of helpers related to generative art.
 
-This project is in the works, please refrain from using this in the meanwhile.
+This project is in the works, please refrain from using it in the meanwhile.

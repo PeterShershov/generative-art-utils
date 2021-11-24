@@ -7,8 +7,9 @@
   "module": "dist/module.js",
   "types": "dist/types.d.ts",
   "scripts": {
+    "clean": "rimraf dist",
     "watch": "parcel watch",
-    "build": "parcel build"
+    "build": "rimraf dist && parcel build"
   },
   "keywords": [
     "canvas"
@@ -24,6 +25,7 @@
     "eslint": "^8.3.0",
     "parcel": "^2.0.1",
     "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.5.2"
   }
 }
