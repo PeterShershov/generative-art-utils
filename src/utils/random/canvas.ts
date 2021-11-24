@@ -1,5 +1,5 @@
-import { randomNumber } from "./random-number";
-import type { RNG } from "./seed";
+import { randomNumber } from './random-number';
+import type { RNG } from './seed';
 
 export function randomPointInCanvas(
     canvasRef: HTMLCanvasElement,
@@ -15,8 +15,4 @@ export function randomPointInCanvas(
         randomNumber(0, canvasRef.width - offset || 0, randomFunction),
         randomNumber(0, canvasRef.height - offset || 0, randomFunction),
     ];
-}
-
-export function randomEntryInArray<T>(array: T[], seed?: ReturnType<typeof RNG>): T | undefined {
-    return array[randomNumber(0, array.length - 1, seed)];
 }

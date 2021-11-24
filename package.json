@@ -1,15 +1,16 @@
 {
   "name": "generative-art-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A bunch of utils related to generative art",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/module.js",
   "types": "dist/types.d.ts",
   "scripts": {
-    "clean": "rimraf dist",
     "watch": "parcel watch",
-    "build": "rimraf dist && parcel build"
+    "clean": "rimraf dist",
+    "parcel:build": "parcel build",
+    "build": "run-s clean parcel:build"
   },
   "keywords": [
     "canvas"
@@ -23,6 +24,7 @@
     "@parcel/packager-ts": "^2.0.1",
     "@parcel/transformer-typescript-types": "^2.0.1",
     "eslint": "^8.3.0",
+    "npm-run-all": "^4.1.5",
     "parcel": "^2.0.1",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
